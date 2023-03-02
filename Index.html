@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 5</title>
+    <style>
+        .btnenviar
+        {
+            background-color: rgba(52, 51, 51, 0.468); 
+            color: white; 
+            padding: 10px; 
+            border-radius: 20px; 
+            border: 0px;
+        }
+        #enviar2:hover
+        {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="">
+        <label for ="nombre">Nombre:</label>
+        <input type ="text" required name="nombre" id="nombre">
+        <br><br><br>
+        <label for ="apellido">Apellido:</label>
+        <input type ="text" required name="apellido" id="apellido">
+        <br><br><br>
+        <input type="submit" value="Enviar" class="btnenviar">
+    </form>
+
+    <hr style="border: 1px solid black;">
+    <form action="" name="forma2">
+        <fieldset>
+            <label for ="nombre">Nombre:</label>
+            <input type ="text" required name="nombre" id="nombre2">
+            <br><br><br>
+            <label for ="apellido">Apellido:</label>
+            <input type ="text" required name="apellido" id="apellido2">
+            <br><br><br>
+            <label for ="correo">Correo:</label>
+            <input type ="email" required name="correo" id="correo" placeholder="Ingrese un correo valido">
+            <br><br><br>
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad">
+            <br><br><br>
+            <label for="lenguaje">Selecciona un lenguaje</label>
+            <input type="radio" name="lenguaje" id="html">HTML
+            <input type="radio" name="lenguaje" id="css">CSS
+            <input type="radio" name="lenguaje" id="js" checked>JS
+            <br><br><br>
+
+            <label for="paises">Paises que Li ha visitado</label>
+            <input type="checkbox" name="paises" id="Taiwan">Taiwan
+            <input type="checkbox" name="paises" id="China">China
+            <input type="checkbox" name="paises" id="Guanajuato">Guanajuato
+            <input type="checkbox" name="paises" id="HK">HK
+            <input type="checkbox" name="paises" id="Brasil">Brasil
+            <br><br><br>
+
+            <label for="autos">Autos</label>
+            <select name="autos" id="autos">
+                <option value="1">Chevrolet</option>
+                <option value="2">VW</option>
+                <option value="3">Tesla</option>
+                <option value="4">Rivian</option>
+            </select>
+            <label for="color">Color:</label:colo>
+            <input type="color" name="color" id="color">
+            <label for="fecha">Fecha:</label>
+            <input type="date" name="decha" id="fecha">
+            <label for="hora">Hora:</label>
+            <input type="time" name="hora" id="hora">
+            <label for="cumple">Cumple:</label>
+            <input type="datetime-local" name="cumple" id="cumple">
+            <input type="submit" value="Enviar" id="enviar2" class="btnenviar">
+        </fieldset>
+    </form>
+</body>
+</html> 
